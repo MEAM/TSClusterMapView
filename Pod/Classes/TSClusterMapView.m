@@ -539,7 +539,8 @@ NSString * const KDTreeClusteringProgress = @"KDTreeClusteringProgress";
 }
 
 - (BOOL)shouldNotAnimate {
-    return (!self.superview || self.layer.animationKeys);
+    return NO;
+//    return (!self.superview || self.layer.animationKeys);
 }
 
 - (void)splitClusterToOriginal:(ADClusterAnnotation *)clusterAnnotation {
